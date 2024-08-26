@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background:url(./mario.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#board{
+    width:450px;
+    height: 450px;
+    background-color: green;
+    background-attachment: fixed;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background:url(./soil.jpg);
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+
+}
+#board div {
+    width: 150px;
+    height: 150px;
+    background-image: url(./pipe.png);
+    background-size: 100px 100px;
+
+    background-repeat: no-repeat; /* Ensure the pipe image does not repeat */
+    background-position: center; /* Center the pipe image within each div */
+    z-index: 2; /* Ensures this image is on top of the soil */
+}
+#board div img{
+    width: 50px;
+    height: 50px;
+    
+}
